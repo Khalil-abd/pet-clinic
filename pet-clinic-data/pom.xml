@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+
     <artifactId>pet-clinic-data</artifactId>
     <dependencies>
         <dependency>
@@ -29,6 +30,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+       <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
     <build>
         <plugins>
@@ -42,9 +44,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <skip> true</skip>
-                </configuration>
             </plugin>
         </plugins>
     </build>
